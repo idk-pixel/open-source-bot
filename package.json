@@ -1,0 +1,23 @@
+{
+  "name": "open-source-bot",
+  "version": "1.0.0",
+  "description": "Free open source discord bot!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idk-pixel/open-source-bot.git"
+  },
+  "keywords": [],
+  "author": "WhoAboutYT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idk-pixel/open-source-bot/issues"
+  },
+  "homepage": "https://github.com/idk-pixel/open-source-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
