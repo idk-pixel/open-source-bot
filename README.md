@@ -6,10 +6,7 @@
 
 ### To do
 
-Create Commands
-Create Categories
-Complete Command Handler With Message Event
+Create Command Handler Categories
 
 ## Features
-
-None YET!
+Command Handler
