@@ -1,4 +1,4 @@
-const { throws } = require("assert");
+const botconfig = require('./bot_config.json');
 const { Collection } = require("discord.js");
 const Discord = require("discord.js");
 const fs = require("fs");
@@ -24,4 +24,12 @@ client.on("ready", () => {
         File.aliases.map((alias) => client.aliases.set(alias, File));
     }
   });
+
+  console.log('Hello World! I am alive as a bot!');
 });
+
+client.on('message', async (message) => {
+
+})
+
+client.login(botconfig.token);
