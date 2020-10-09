@@ -6,6 +6,7 @@ class OpenSourceBot extends Client {
       disableMentions: `everyone`,
     });
     this.commands = new Collection()
+    this.expressCalc = require('../expressjs/src/app');
     this.aliases = new Collection();
     this.discord = require('discord.js');
     this.fs = require('fs');
@@ -25,6 +26,7 @@ class OpenSourceBot extends Client {
   }
 
   start(configuration, path) {
+    new this.expressCalc().start(configuration);
     this.login(configuration.token);
     this.commandHandler(path);
     this.on('ready', function() {
