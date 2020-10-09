@@ -4,5 +4,6 @@
     "bot_name": "Your Bot Name",
     "express": {
         "port": 8080
-    }
+    },
+    "mongouri": "your_monguri"
 }
