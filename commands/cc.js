@@ -20,11 +20,11 @@ module.exports = {
         return message.reply('You did not specify the content for the command!');
     }
 
-    await ccManager.findOne({Guild: message.guild.id, Command: args[0]}, (err, data) => {
+    ccManager.findOne({Guild: message.guild.id, Command: args[0]}, (err, data) => {
         if(err) throw err;
         if(!data) {
-            await ccManager.create({ Guild: message.guild.id, Command: args[0], Content: args[1] });
-            await message.channel.send(`Created command ${args[0]} with content of ${args[1]}`);
+            ccManager.create({ Guild: message.guild.id, Command: args[0], Content: args[1] });
+            message.channel.send(`Created command ${args[0]} with content of ${args[1]}`);
         } else {
             data.Content = args[0]
             data.save()
