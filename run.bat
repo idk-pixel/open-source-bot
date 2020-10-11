@@ -1,3 +1,5 @@
-echo Starting bot...
+@echo off
+echo Starting the bot..
 node .
-pause
+
+
